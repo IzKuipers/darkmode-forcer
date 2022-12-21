@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Darkmode Forcer",
+    "version": "0.1",
+    "description": "Force all websites that use 'prefers-color-scheme' to dark.",
+    "author": "IzKuipers",
+    "icons": {
+        "512": "icon/512x512.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "js/content2.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
